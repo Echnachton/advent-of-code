@@ -6,7 +6,6 @@ export async function getDataForDay(day: string) {
     const cacheEntry = await kv.get([day]);
 
     if (cacheEntry.value) {
-        console.log('here')
         return cacheEntry.value;
     }
 
