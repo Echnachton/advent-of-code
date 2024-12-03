@@ -28,7 +28,6 @@ listTwo.map(pos => {
 let similarity = 0;
 for (let i = 0; i < listOne.length; i++) {
     const modifier = countCache[listOne[i]] ?? 0;
-    console.log(listOne[i], modifier)
     similarity += listOne[i] * modifier;
 }
 
